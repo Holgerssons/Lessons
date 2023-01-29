@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+header {
+  color: #fea500;
+}
+
+a {
+  color: rgb(41, 41, 255);
+}
+
+.text {
+  color: rgb(255, 8, 86);
+}
+
+#creation {
+  color: rgb(22, 254, 254);
+}
+
+.block_text,
+.paragraph {
+  color: rgba(32, 54, 255, 0.852);
+}
+
+.block_career>h2 {
+  color: rgba(226, 57, 0, 0.879);
+}
+
+.paragraph~p {
+  color: rgb(0, 255, 8);
+}
+
+.list_discography .list_album {
+  color: blueviolet;
+}
+
+ul .list_music {
+  color: rgba(255, 0, 187, 0.988);
+}
+
+.footer_text+p {
+  color: rgb(109, 56, 255);
+}
+
+.list_video>.winter_video {
+  color: rgb(182, 103, 0);
+}
+
+.list_video>.text {
+  color: rgb(149, 0, 117);
+}
+
+[class*="_video"] {
+  color: rgb(176, 0, 76);
+}
+
+.list_smile+li {
+  color: rgb(0, 163, 30);
+}
