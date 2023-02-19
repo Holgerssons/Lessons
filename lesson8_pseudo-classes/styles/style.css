@@ -1,0 +1,431 @@
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #E5E5E5;
+  color: #637381;
+}
+
+/* block-TOP START */
+
+
+.block-top {
+  background: url(../img/01unsplash.jpg) center / cover no-repeat;
+  border-radius: 5px;
+}
+
+.top-content {
+  max-width: 1270px;
+  margin: 0 auto 50px;
+  padding: 330px 15px 100px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.top-content>p {
+  max-width: 360px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #E5E5E5;
+}
+
+.top-content p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.top-content>h2 {
+  max-width: 605px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #F8F9FA;
+  margin-bottom: 15px;
+}
+
+
+/* block-TOP END */
+
+
+/* block-CENTR  START */
+
+
+.block-centr {
+  max-width: 1270px;
+  margin: 0 auto 50px;
+  padding: 0 15px 0;
+}
+
+.block-centr>h2 {
+  font-weight: 400;
+  font-size: 26px;
+  color: #212B36;
+  margin-bottom: 45px;
+}
+
+.list1 {
+  margin-bottom: 18px;
+}
+
+.list1:hover:nth-child(odd) {
+  color: #284cc5;
+}
+
+.list1:hover:nth-child(even) {
+  color: #ce2727;
+}
+
+.list1:last-child {
+  margin-bottom: 40px;
+}
+
+.list1::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon1.svg) left no-repeat;
+  width: 8px;
+  height: 12px;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list1:hover::before {
+  margin-right: 12px;
+  transform: scale(1.5);
+}
+
+.list2 {
+  margin-bottom: 20px;
+}
+
+.list2:first-child {
+  margin-bottom: 28px;
+}
+
+.list2:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+.list2:last-child {
+  margin-bottom: 40px;
+}
+
+.list2::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon2.svg) left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list2:hover::before {
+  transform: scale(1.5);
+}
+
+.list3 {
+  margin-bottom: 18px;
+}
+
+.list3:last-child:last-child {
+  margin-bottom: 40px;
+}
+
+.list3::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon2.2.svg) left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list3:hover::before {
+  transform: rotate(45deg);
+}
+
+.list4 {
+  margin-bottom: 18px;
+}
+
+.list4:last-child:last-child {
+  margin-bottom: 40px;
+}
+
+.list4::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon3red.svg) left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list4:hover::before {
+
+  transform: scale(1.5);
+}
+
+.list5 {
+  margin-bottom: 20px;
+}
+
+.list5:last-child:last-child {
+  margin-bottom: 40px;
+}
+
+.list5::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon4arrow.svg) left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list5:hover::before {
+  transform: rotate(-180deg);
+}
+
+.list6 {
+  margin-bottom: 19px;
+}
+
+.list6::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/icon5star.svg) left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: all 0.5s;
+}
+
+.list6:hover::before {
+  transform: rotate(-180deg);
+}
+
+.list6:hover:first-child {
+  color: #d41bd7;
+}
+
+.list6:hover:nth-child(3) {
+  color: #0e8cfbdd;
+}
+
+.list6:hover:last-child {
+  color: #18c7a1;
+}
+
+.list6:hover:nth-child(2n) {
+  color: #cd6816;
+}
+
+
+/* block-CENTR  END */
+
+
+/* block-BOTTOM START */
+
+
+.block-bottom {
+  background: url(../img/speaker.png) 78% / auto auto no-repeat, url(../img/icons/vector2.svg) bottom right no-repeat, url(../img/icons/vector1.svg) 100% 100% no-repeat, url(../img/02rectangle.jpg) center / cover no-repeat;
+}
+
+.bottom-content {
+  max-width: 1270px;
+  margin: 0 auto 50px;
+  padding: 145px 15px 146px;
+}
+
+.content-block {
+  max-width: 570px;
+  margin-right: 179px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 13px;
+  color: #3056D3;
+}
+
+.content-block>h2 {
+  max-width: 470px;
+  font-size: 36px;
+  color: #212B36;
+  margin-bottom: 15px;
+  line-height: 1.25;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.link {
+  display: inline-block;
+  background-color: #3056D3;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.link:focus {
+  outline: 1px dashed #311bd7;
+}
+
+.link:hover {
+  box-shadow: 0 2px 4px rgba(37, 25, 99, 0.392), 0 0 30px rgba(23, 8, 82, 0.233) inset;
+  font-weight: 700;
+}
+
+.link:active {
+  background-color: #dfd32fde;
+}
+
+
+/* block-BOTTOM END */
+
+
+/* пропрацьовуємо усі псевлокласи та псевдоелементи */
+
+.block-practice {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.block1 {
+  margin-bottom: 50px;
+}
+
+.block1>h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #063041;
+  margin-bottom: 30px;
+}
+
+.block1>h2:hover {
+  color: #0048a7;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.practice {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+}
+
+.practice:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list-1::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #cd6816;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.list-2::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #cd6816;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.list-2:hover+.list-3 {
+  color: #d41bd7;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.list-3:focus {
+  outline: 1px dashed #d41bd7;
+}
+
+.practice:last-of-type {
+  text-decoration: line-through;
+  letter-spacing: 5px;
+}
+
+.block2 {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.link-hidden {
+  display: block;
+  font-size: 20px;
+  color: #63028d;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.link-hidden:hover {
+  text-decoration: underline;
+}
+
+.hidden-block {
+  max-width: 400px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  margin: 0 auto 30px;
+  padding: 20px 10px;
+  background-color: #63028d;
+  border-radius: 10px;
+  font-style: italic;
+  display: none;
+}
+
+.hidden-block:target {
+  display: block;
+}
+
+.link-practice {
+  font-size: 28px;
+  color: black;
+  opacity: 70%;
+}
+
+.link-practice:hover {
+  font-size: 30px;
+  opacity: 100%;
+}
+
+.block2>ul {
+  text-align: center;
+}
+
+.list-practice:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Github:visited {
+  color: #3056D3;
+}
