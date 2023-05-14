@@ -1,0 +1,486 @@
+@import url("reset.css");
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Armata", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+[class*=__container] {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/***** Оформлення *****/
+
+
+.main {
+  padding: 50px 0;
+  background-color: #0B1B0E;
+}
+
+.practice__container {
+  padding: 0 0;
+}
+
+.block-parent {
+  width: 250px;
+  height: 250px;
+  background-color: #E3D9CA;
+  display: inline-block;
+}
+
+.block-parent:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+
+.block-parent__item {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #258D31 0%, #014F8F 97.33%);
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease 0s;
+}
+
+
+/***** Оформлення  *****/
+
+
+/* Властивості */
+
+
+.block-parent__item_translate:hover {
+  transform: translate(22px, 22px);
+}
+
+.block-parent__item_translate-x:hover {
+  transform: translateX(22px);
+}
+
+.block-parent__item_translate-y:hover {
+  transform: translateY(22px);
+}
+
+.block-parent__item_scale:hover {
+  transform: scale(1.1);
+}
+
+.block-parent__item_scale-x:hover {
+  transform: scaleX(1.1);
+}
+
+.block-parent__item_scale-y:hover {
+  transform: scaleY(1.1);
+}
+
+.block-parent__item_rotate:hover {
+  transform: rotate(180deg);
+}
+
+.block-parent__item_rotate-x:hover {
+  transform: rotateX(180deg);
+}
+
+.block-parent__item_rotate-y:hover {
+  transform: rotateY(-180deg);
+}
+
+.block-parent__item_skew:hover {
+  transform: skew(8deg, 8deg);
+}
+
+.block-parent__item_skew-x:hover {
+  transform: skewX(10deg);
+}
+
+.block-parent__item_skew-y:hover {
+  transform: skewY(10deg);
+}
+
+.block-parent__item_matrix:hover {
+  transform: matrix(1.1, 0, 0, 1.1, 10, 0);
+}
+
+.block-parent__item_transform-origin {
+  transform-origin: 10px 10px;
+}
+
+.block-parent__item_transform-origin:hover {
+  transform: scale(1.1);
+}
+
+
+/* Властивості 3D */
+
+
+
+.block-parent_translate-3d {
+  perspective: 500px;
+}
+
+.block-parent__item_translate-3d:hover {
+  transform: translate3D(10px, 10px, 20px);
+}
+
+/* Нет разницы между обычным Scale */
+.block-parent__item_skale-3d:hover {
+  transform: scale3D(1.1, 1.1, 1.1);
+}
+
+.block-parent__item_rotate-3d:hover {
+  transform: rotate3d(1, 1, 1, 180deg);
+}
+
+
+.block-parent__item_multi-3d:hover {
+  transform: translate3d(20px, 20px, 10px) rotate3d(1, 1, 1, 10deg);
+}
+
+.block-parent_transform-style {
+  perspective: 600px;
+  transform-style: flat;
+}
+
+.block-parent__item_transform-style:hover {
+  transform: rotateX(50deg);
+}
+
+
+/**** Car ****/
+
+
+.car {
+  padding: 200px 0;
+}
+
+.car__body {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  height: 180px;
+  background: url(../img/612a38397c7c75000443b28a.png) 10px 10px/ 45px no-repeat, url(../img/72076.jpg) -90px -101px no-repeat;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 50;
+}
+
+.car__wheels-front {
+  display: inline-block;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 15px;
+  left: -15px;
+  background-color: #0B1B0E;
+}
+
+.car__wheels-back {
+  display: inline-block;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 15px;
+  left: 214px;
+  background-color: #0B1B0E;
+}
+
+.front__tire {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(287deg, rgba(17, 0, 27, 0.9697128851540616) 0%, rgba(29, 6, 42, 0.9557072829131653) 51%, rgba(14, 0, 25, 0.9837184873949579) 100%);
+  border: 18px dashed rgba(98, 98, 98, 0.922);
+  border-radius: 50%;
+  top: 15px;
+  left: -7px;
+}
+
+.front__disc {
+  position: relative;
+  top: 51px;
+  left: 51px;
+  width: 110px;
+  height: 110px;
+  background-color: rgb(230, 227, 227);
+  border: 2px dashed black;
+  border-radius: 50%;
+}
+
+.front__disc::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  top: 16px;
+  left: 16px;
+  border-radius: 50%;
+  border: 6px double black;
+  background: url(../img/72076.jpg) -317px -443px no-repeat;
+}
+
+
+
+
+
+
+.car__wheels-back {
+  display: inline-block;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 15px;
+  left: 214px;
+  background-color: #0B1B0E;
+}
+
+.back__tire {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(287deg, rgba(17, 0, 27, 0.9697128851540616) 0%, rgba(29, 6, 42, 0.9557072829131653) 51%, rgba(14, 0, 25, 0.9837184873949579) 100%);
+  border: 18px dashed rgba(98, 98, 98, 0.922);
+  border-radius: 50%;
+  top: 15px;
+  left: 7px;
+}
+
+.back__disc {
+  position: relative;
+  top: 51px;
+  left: 51px;
+  width: 110px;
+  height: 110px;
+  background-color: rgb(230, 227, 227);
+  border: 2px dashed black;
+  border-radius: 50%;
+}
+
+.back__disc::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  top: 16px;
+  left: 16px;
+  border-radius: 50%;
+  border: 6px double black;
+  background: url(../img/72076.jpg) -317px -443px no-repeat;
+}
+
+
+.car__cabin {
+  max-width: 350px;
+  height: 120px;
+  position: relative;
+  border-radius: 9% 91% 100% 0% / 9% 100% 0% 91%;
+  top: -374px;
+  left: 206px;
+  background: url(../img/72076.jpg) -296px 19px no-repeat;
+}
+
+.car__cabin::before {
+  content: "";
+  width: 210px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: -8px;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.cabin__window {
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+  position: relative;
+  top: 41px;
+  left: 172px;
+  border: 1px solid black;
+  background: url(../img/1.png) 0 0 / cover no-repeat, url(../img/glass.png) -141px -86px no-repeat;
+  border-radius: 9% 91% 100% 0% / 9% 100% 0% 91%;
+}
+
+.cabin__door {
+  width: 0px;
+  height: 230px;
+  position: relative;
+  top: -44px;
+  left: 149px;
+  border: 1px solid black;
+}
+
+.cabin__door-knob {
+  display: inline-block;
+  width: 36px;
+  height: 5px;
+  position: relative;
+  top: -172px;
+  left: 163px;
+  border: 1px solid black;
+  background-color: rgba(1, 52, 27, 0.419);
+  border-radius: 8px;
+}
+
+.cabin__door-buttom {
+  display: inline-block;
+  width: 110px;
+  height: 0px;
+  position: relative;
+  top: -60px;
+  left: 109px;
+  border: 1px solid black;
+}
+
+
+
+
+
+.car__grate {
+  display: inline-block;
+  position: relative;
+  width: 105px;
+  height: 10px;
+  top: -271px;
+  left: -256px;
+  border: 2px solid black;
+  border-radius: 8px;
+  transform: rotate(90deg);
+  background: url(../img/72076.jpg) -94px -204px no-repeat;
+}
+
+.car__grate::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgb(199, 200, 201);
+}
+
+.car__grate-deg {
+  display: inline-block;
+  position: relative;
+  width: 196px;
+  height: 10px;
+  top: -267px;
+  left: -182px;
+  border: 2px solid black;
+  border-radius: 8px;
+  transform: rotate(-32deg);
+  background: url(../img/72076.jpg) -5px -438px no-repeat;
+}
+
+.car__grate-deg::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgb(199, 200, 201);
+}
+
+.cabin__step {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 16px;
+  top: -64px;
+  left: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background: url(../img/72076.jpg) 238px -554px no-repeat;
+}
+
+.car__headlight-front {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 30px;
+  top: -377px;
+  left: 663px;
+  border: 1px solid black;
+  background-color: rgb(55, 55, 55);
+  border-radius: 8px;
+}
+
+.car__headlight-front::after {
+  content: "";
+  width: 26px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  background: rgb(206, 217, 0);
+  border-radius: 50%;
+  box-shadow: 21px 2px 17px 3px rgba(232, 205, 0, 0.742);
+}
+
+.car__headlight-front:hover::after {
+  background: rgb(231, 243, 0);
+  box-shadow: 21px 2px 17px 3px rgba(251, 222, 3, 0.742);
+}
+
+
+.car__headlight-back {
+  display: inline-block;
+  position: relative;
+  width: 21px;
+  height: 31px;
+  top: -356px;
+  left: -44px;
+  border: 1px solid black;
+  background-color: rgb(180, 2, 2);
+  border-radius: 5px;
+  box-shadow: -18px 2px 25px 0px rgba(237, 59, 0, 0.75);
+}
+
+.car__headlight-back::after {
+  content: "";
+  width: 9px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgb(206, 21, 0);
+  ;
+  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: -21px 2px 17px -3px rgba(237, 126, 0, 0.63);
+}
+
+.car__headlight-back:hover::after {
+  background-color: rgb(239, 0, 0);
+  box-shadow: -40px 0px 24px -2px rgb(249, 23, 3);
+}
