@@ -1,0 +1,173 @@
+@import url("reset.css");
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.main__container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main__menu:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.main__content {
+  padding: 100px 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 500;
+  line-height: 2.08;
+}
+
+.menu__categories {
+  position: relative;
+  padding-right: 16px;
+}
+
+.menu__categories:hover {
+  text-decoration: underline;
+}
+
+.menu__categories::after {
+  content: "+";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+.view__link {
+  opacity: 50%;
+  transition: all 0.3s;
+}
+
+.view__link_active {
+  color: #495057;
+  opacity: 1;
+}
+
+.view__link:hover {
+  text-decoration: underline;
+  color: #495057;
+  opacity: 1;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  margin: 0 -15px;
+  margin-bottom: 60px;
+}
+
+.cards__column {
+  padding: 0 15px;
+  flex: 0 0 33.333%;
+}
+
+.item-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-card__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.item-card__image>img {
+  max-width: 100%;
+  transition: all 1s;
+}
+
+.item-card__image>img:hover {
+  transform: scale(1.1);
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.text-block__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #212529;
+  transition: all 0.2s;
+}
+
+.text-block__title:hover {
+  color: #CCD5AE;
+}
+
+.text-block__author {
+  padding-top: 15px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.item-card__creative {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #F8F9FA;
+  padding: 3px 12px 2px;
+  background: rgba(33, 37, 41, 0.3);
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.item-card__creative:hover {
+  background: rgba(33, 37, 41, 0.705);
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 178px;
+  background-color: #212529;
+  margin: 0 auto;
+  color: #F8F9FA;
+  font-weight: 500;
+  line-height: 2.08;
+  transition: all 0.3s;
+  border-radius: 3px;
+  padding: 7px 50px 8px 49px;
+}
+
+.main-button:hover {
+  background-color: #484a4b;
+}
